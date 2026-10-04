@@ -4,12 +4,12 @@ Personal research homepage built from the [al-folio v1 template](https://github.
 
 ## Update the site
 
-- Home introduction and the visible bio placeholders: `_pages/about.md` (`[BIO TAGLINE — TO BE PROVIDED]` and `[BIO — TO BE PROVIDED]`).
+- Home introduction and the visible bio placeholders: `_pages/about.md` (`[BIO — TO BE PROVIDED]`).
 - Research interests and descriptions: `_pages/research.md` and `_pages/about.md`.
 - Publications: `_bibliography/papers.bib`; add only confirmed metadata and links.
 - Projects, experience, and contact: the matching files in `_pages/`.
 - Verified social profiles: `_data/socials.yml` and the links in `_pages/about.md`. Add LinkedIn, email, and Google Scholar only when their public destinations are confirmed.
-- Approved public headshot: `assets/img/headshot.jpg`. The home page shows a neutral placeholder until that exact file exists. Its stable public URL is `https://vskarich2.github.io/assets/img/headshot.jpg`.
+- Approved public headshot: `assets/img/headshot.jpg`. The URL currently serves a labeled placeholder. After replacing it with an approved portrait, set `headshot_ready: true` in `_config.yml` to show the photograph on the home page. Its stable public URL is `https://vskarich2.github.io/assets/img/headshot.jpg`.
 - Approved public CV: `assets/pdf/veljko-skarich-cv.pdf`. The CV page offers the download only when that file exists.
 - Site metadata and feature flags: `_config.yml`.
 
