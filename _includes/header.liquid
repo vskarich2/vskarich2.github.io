@@ -1,0 +1,85 @@
+<header class="site-header">
+  <nav
+    id="navbar"
+    class="navbar navbar-light navbar-expand-sm site-nav {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+    aria-label="Primary navigation"
+  >
+    <div class="container site-nav__inner">
+      <a class="navbar-brand site-nav__brand" href="{{ '/' | relative_url }}" aria-label="Veljko Skarich, home"
+        >Veljko Skarich<span aria-hidden="true">.</span></a
+      >
+
+      <button
+        class="navbar-toggler collapsed navbar-toggler-main site-nav__toggle"
+        type="button"
+        data-nav-toggle="navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar-collapse-main site-nav__menu" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list site-nav__links">
+          <li class="nav-item {% if page.url contains '/research/' %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ '/research/' | relative_url }}"
+              {% if page.url contains '/research/' %}
+                aria-current="page"
+              {% endif %}
+              >Research</a
+            >
+          </li>
+          <li class="nav-item {% if page.url contains '/publications/' %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ '/publications/' | relative_url }}"
+              {% if page.url contains '/publications/' %}
+                aria-current="page"
+              {% endif %}
+              >Publications</a
+            >
+          </li>
+          <li class="nav-item {% if page.url contains '/projects/' %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ '/projects/' | relative_url }}"
+              {% if page.url contains '/projects/' %}
+                aria-current="page"
+              {% endif %}
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item {% if page.url contains '/cv/' %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ '/cv/' | relative_url }}"
+              {% if page.url contains '/cv/' %}
+                aria-current="page"
+              {% endif %}
+              >CV</a
+            >
+          </li>
+        </ul>
+        <div class="site-nav__actions">
+          <a class="site-nav__icon" href="https://github.com/vskarich2" target="_blank" rel="me noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <!-- TODO: Add a LinkedIn icon when a verified profile URL is supplied. -->
+          {% if site.enable_darkmode %}
+            <button id="light-toggle" class="site-nav__theme" type="button" title="Change color theme" aria-label="Change color theme">
+              <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+              <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+              <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+            </button>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
