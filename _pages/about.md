@@ -13,33 +13,30 @@ nav: false
     <div class="home-hero__field">
       <svg class="hero-geometry" viewBox="0 0 1512 906" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <g fill="none" stroke="#64efff" stroke-width="1.25" vector-effect="non-scaling-stroke">
-          <path d="M-124 485 C164 428 310 561 532 549 S859 313 1130 312 S1454 567 1634 487" opacity=".72"/>
-          <path d="M-86 541 C162 478 336 619 562 601 S867 365 1134 364 S1477 623 1641 530" opacity=".29"/>
-          <path d="M235 905 C375 716 478 568 678 473 S1047 183 1532 97" opacity=".43"/>
+          <path d="M460 905 C580 760 650 625 760 530 S1080 200 1532 97" opacity=".43"/>
           <path d="M740 -84 C904 62 917 176 1038 292 S1260 519 1510 602" opacity=".36"/>
           <ellipse cx="1184" cy="367" rx="378" ry="205" transform="rotate(-24 1184 367)" opacity=".41"/>
           <ellipse cx="1184" cy="367" rx="483" ry="292" transform="rotate(-24 1184 367)" opacity=".21"/>
           <path d="M-63 721 H190 L344 623 H601" stroke-dasharray="3 8" opacity=".35"/>
         </g>
         <g fill="none" stroke="#b8fbff" stroke-width="1" opacity=".6">
-          <circle cx="353" cy="550" r="7"/><circle cx="831" cy="396" r="8"/>
+          <circle cx="831" cy="396" r="8"/>
           <circle cx="1142" cy="312" r="6"/><circle cx="1320" cy="441" r="8"/>
-          <path d="M353 528 v-35 M831 374 v-44 M1120 312 h-35 M1320 461 v33"/>
+          <path d="M831 374 v-44 M1120 312 h-35 M1320 461 v33"/>
         </g>
         <g fill="#8af4ff">
-          <circle cx="353" cy="550" r="2.5"/><circle cx="831" cy="396" r="2.5"/>
+          <circle cx="831" cy="396" r="2.5"/>
           <circle cx="1142" cy="312" r="2.5"/><circle cx="1320" cy="441" r="2.5"/>
         </g>
       </svg>
       <div class="hero-coordinates" aria-hidden="true">03A8 / 7C12<br>00110101<br>48° 12′ 06″</div>
 
-      <div class="hero-window">
-        <div class="hero-window__marker" aria-hidden="true"></div>
-        <div class="hero-window__content">
+      <div class="hero-copy">
+        <div class="hero-copy__content">
           <h1 id="home-title">VELJKO SKARICH</h1>
-          <p class="hero-window__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
-          <p class="hero-window__bio">[BIO — TO BE PROVIDED]</p>
-          <nav class="hero-window__links" aria-label="Research profile links">
+          <p class="hero-copy__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
+          <p class="hero-copy__bio">[BIO — TO BE PROVIDED]</p>
+          <nav class="hero-copy__links" aria-label="Research profile links">
             <a href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">GITHUB <span aria-hidden="true">↗</span></a>
             <a href="{{ '/publications/' | relative_url }}">PUBLICATIONS <span aria-hidden="true">↗</span></a>
             <a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a>

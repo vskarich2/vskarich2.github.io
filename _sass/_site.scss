@@ -250,53 +250,19 @@ body.site-home-page > .container[role="main"].mt-5 {
   text-align: right;
 }
 
-.hero-window {
+/* The identity lives directly in the cobalt field. */
+.hero-copy {
   position: relative;
   z-index: 2;
-  width: min(900px, 68vw);
-  min-height: 436px;
-  margin-left: clamp(0px, 2vw, 36px);
-  padding: clamp(42px, 5.2vw, 76px) clamp(40px, 5vw, 72px);
-  border: 1px solid rgba(199, 249, 255, 0.35);
-  background: #080d16;
-  transform: translateY(30px);
+  width: min(780px, 62vw);
+  margin-left: clamp(30px, 6.5vw, 98px);
 }
 
-.hero-window::before,
-.hero-window::after {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  content: "";
-  pointer-events: none;
-}
-
-.hero-window::before {
-  top: -2px;
-  left: -2px;
-  border-top: 2px solid #82f3ff;
-  border-left: 2px solid #82f3ff;
-}
-
-.hero-window::after {
-  right: -2px;
-  bottom: -2px;
-  border-right: 2px solid #82f3ff;
-  border-bottom: 2px solid #82f3ff;
-}
-
-.hero-window__marker {
-  width: 45px;
-  height: 2px;
-  margin-bottom: clamp(42px, 5vw, 70px);
-  background: #76efff;
-}
-
-.hero-window__content {
+.hero-copy__content {
   max-width: 590px;
 }
 
-.hero-window h1 {
+.hero-copy h1 {
   margin: 0;
   color: #a5f7ff;
   font-family: var(--site-display);
@@ -306,7 +272,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   line-height: 1.15;
 }
 
-.hero-window__descriptor {
+.hero-copy__descriptor {
   margin: 21px 0 0;
   color: #b8fbff;
   font-family: var(--site-display);
@@ -316,21 +282,21 @@ body.site-home-page > .container[role="main"].mt-5 {
   line-height: 1.55;
 }
 
-.hero-window__bio {
+.hero-copy__bio {
   margin: 29px 0 0;
   color: #78d7e5;
   font-size: 18px;
   line-height: 1.65;
 }
 
-.hero-window__links {
+.hero-copy__links {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 30px;
   margin-top: 44px;
 }
 
-.hero-window__links a {
+.hero-copy__links a {
   color: #a5f7ff;
   font-family: var(--site-display);
   font-size: 13px;
@@ -340,12 +306,12 @@ body.site-home-page > .container[role="main"].mt-5 {
   white-space: nowrap;
 }
 
-.hero-window__links a:hover,
-.hero-window__links a:focus-visible {
+.hero-copy__links a:hover,
+.hero-copy__links a:focus-visible {
   color: #b8fbff;
 }
 
-.hero-window__links span {
+.hero-copy__links span {
   color: #b8fbff;
 }
 
@@ -357,7 +323,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   width: min(298px, 22vw);
   padding: 0 10px 8px;
   border: 1px solid rgba(130, 243, 255, 0.75);
-  background: #090e17;
+  background: transparent;
 }
 
 .portrait-window::before,
@@ -403,6 +369,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(130, 243, 255, 0.3);
+  background: var(--cobalt);
 }
 
 .portrait-window__image img {
@@ -418,7 +385,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   justify-content: center;
   gap: 17px;
   min-height: 348px;
-  background: #0f1534;
+  background: transparent;
   color: #8fefff;
   font-family: var(--site-mono);
   font-size: 10px;
@@ -1177,10 +1144,10 @@ body {
 }
 
 @media (max-width: 1050px) {
-  .hero-window {
-    width: 75vw;
+  .hero-copy {
+    width: 70vw;
   }
-  .hero-window__content {
+  .hero-copy__content {
     max-width: 500px;
   }
   .portrait-window {
@@ -1197,13 +1164,13 @@ body {
     min-height: calc(100svh - 76px);
     padding: 72px 40px 64px;
   }
-  .hero-window {
+  .hero-copy {
     width: min(100%, 700px);
     min-height: 0;
     margin: 0;
     transform: none;
   }
-  .hero-window__content {
+  .hero-copy__content {
     max-width: 590px;
   }
   .portrait-window {
@@ -1212,7 +1179,7 @@ body {
     right: auto;
     align-self: flex-end;
     width: 240px;
-    margin: -23px 18px 0 0;
+    margin: 40px 18px 0 0;
   }
   .portrait-placeholder {
     min-height: 265px;
@@ -1230,31 +1197,26 @@ body {
     min-height: calc(100svh - 76px);
     padding: 76px 23px 66px;
   }
-  .hero-window {
+  .hero-copy {
     width: 100%;
-    min-height: 0;
     margin: 0;
-    padding: 35px 27px 39px;
-    transform: none;
+    padding: 0 23px;
   }
-  .hero-window__marker {
-    margin-bottom: 42px;
-  }
-  .hero-window h1 {
+  .hero-copy h1 {
     font-size: clamp(25px, 7vw, 32px);
   }
-  .hero-window__descriptor {
+  .hero-copy__descriptor {
     font-size: 13px;
   }
-  .hero-window__bio {
+  .hero-copy__bio {
     margin-top: 25px;
     font-size: 17px;
   }
-  .hero-window__links {
+  .hero-copy__links {
     gap: 13px 22px;
     margin-top: 31px;
   }
-  .hero-window__links a {
+  .hero-copy__links a {
     font-size: 11px;
   }
   .portrait-window {
@@ -1264,7 +1226,7 @@ body {
     align-self: flex-end;
     width: min(235px, 62vw);
     max-width: none;
-    margin: -12px 10px 0 0;
+    margin: 37px 10px 0 0;
   }
   .portrait-placeholder {
     min-height: 250px;
@@ -1284,20 +1246,20 @@ body {
   .site-nav .site-nav__brand {
     font-size: 12px;
   }
-  .hero-window {
-    padding-inline: 23px;
+  .hero-copy {
+    padding-inline: 0;
   }
-  .hero-window h1 {
+  .hero-copy h1 {
     font-size: clamp(24px, 6.8vw, 29px);
   }
-  .hero-window__descriptor {
+  .hero-copy__descriptor {
     font-size: 12px;
     line-height: 1.65;
   }
-  .hero-window__links {
+  .hero-copy__links {
     gap: 10px 19px;
   }
-  .hero-window__links a {
+  .hero-copy__links a {
     font-size: 10px;
   }
 }
