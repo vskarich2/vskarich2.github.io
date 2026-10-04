@@ -21,7 +21,7 @@ nav: false
           <ellipse cx="1184" cy="367" rx="483" ry="292" transform="rotate(-24 1184 367)" opacity=".21"/>
           <path d="M-63 721 H190 L344 623 H601" stroke-dasharray="3 8" opacity=".35"/>
         </g>
-        <g fill="none" stroke="#eaf9ff" stroke-width="1" opacity=".6">
+        <g fill="none" stroke="#b8fbff" stroke-width="1" opacity=".6">
           <circle cx="353" cy="550" r="7"/><circle cx="831" cy="396" r="8"/>
           <circle cx="1142" cy="312" r="6"/><circle cx="1320" cy="441" r="8"/>
           <path d="M353 528 v-35 M831 374 v-44 M1120 312 h-35 M1320 461 v33"/>
