@@ -35,7 +35,11 @@ nav: false
         <div class="hero-copy__content">
           <h1 id="home-title">VELJKO SKARICH</h1>
           <p class="hero-copy__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
-          <p class="hero-copy__bio">[BIO — TO BE PROVIDED]</p>
+          <p class="hero-copy__bio">
+            I’m a researcher with a background in software engineering. I study how language model agents reason, where their reasoning fails, and how to
+            inspect and verify their behavior. In Poisoned Valleys, I investigate how misconceptions during code repair shape an agent’s hypotheses,
+            plans, and resulting patches. I have two papers accepted at NeurIPS 2026 workshops.
+          </p>
           <nav class="hero-copy__links" aria-label="Research profile links">
             <a href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">POISONVALLEYS.ORG <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">GITHUB <span aria-hidden="true">↗</span></a>
