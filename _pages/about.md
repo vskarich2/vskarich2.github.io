@@ -37,6 +37,7 @@ nav: false
           <p class="hero-copy__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
           <p class="hero-copy__bio">[BIO — TO BE PROVIDED]</p>
           <nav class="hero-copy__links" aria-label="Research profile links">
+            <a href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">POISONVALLEYS.ORG <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">GITHUB <span aria-hidden="true">↗</span></a>
             <a href="{{ '/publications/' | relative_url }}">PUBLICATIONS <span aria-hidden="true">↗</span></a>
             <a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
