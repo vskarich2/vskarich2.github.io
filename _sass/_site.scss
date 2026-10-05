@@ -219,13 +219,16 @@ body.site-home-page > .container[role="main"].mt-5 {
 }
 
 .home-hero__field {
+  /* Change these two values to move the entire name, descriptor, bio, and links. */
+  --hero-copy-top: 76px;
+  --hero-copy-left: 60px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1512px;
   min-height: calc(100svh - 76px);
   margin: 0 auto;
-  padding: clamp(72px, 7.5vw, 118px) clamp(32px, 5vw, 78px);
+  padding: var(--hero-copy-top) var(--hero-copy-left) 70px;
 }
 
 .hero-geometry {
@@ -255,7 +258,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   position: relative;
   z-index: 2;
   width: min(780px, 62vw);
-  margin-left: clamp(30px, 6.5vw, 98px);
+  margin-left: 0;
 }
 
 .hero-copy__content {
@@ -1161,8 +1164,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    --hero-copy-top: 64px;
+    --hero-copy-left: 36px;
     min-height: calc(100svh - 76px);
-    padding: 72px 40px 64px;
+    padding: var(--hero-copy-top) var(--hero-copy-left) 64px;
   }
   .hero-copy {
     width: min(100%, 700px);
@@ -1194,13 +1199,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    --hero-copy-top: 54px;
+    --hero-copy-left: 23px;
     min-height: calc(100svh - 76px);
-    padding: 76px 23px 66px;
+    padding: var(--hero-copy-top) var(--hero-copy-left) 66px;
   }
   .hero-copy {
     width: 100%;
     margin: 0;
-    padding: 0 23px;
+    padding: 0;
   }
   .hero-copy h1 {
     font-size: clamp(25px, 7vw, 32px);
@@ -1245,9 +1252,6 @@ body {
 @media (max-width: 480px) {
   .site-nav .site-nav__brand {
     font-size: 12px;
-  }
-  .hero-copy {
-    padding-inline: 0;
   }
   .hero-copy h1 {
     font-size: clamp(24px, 6.8vw, 29px);

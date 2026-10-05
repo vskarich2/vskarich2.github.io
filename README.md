@@ -15,6 +15,12 @@ Personal research homepage built from the [al-folio v1 template](https://github.
 
 No personal resume or unpublished paper PDF is included.
 
+## Move or edit the hero yourself
+
+The hero text is in `_pages/about.md`. Its desktop position is controlled by `--hero-copy-top` and `--hero-copy-left` at the start of `.home-hero__field` in `_sass/_site.scss`. Increase a value to move the entire text group down or right; decrease it to move up or left. The same two variables have tablet and phone values in the `max-width: 900px` and `max-width: 700px` media rules later in that file.
+
+Edit those files in this checkout. On this Mac, run `BUNDLE_PATH=vendor/bundle /opt/homebrew/opt/ruby/bin/bundle exec jekyll serve` to preview locally after dependencies are installed. Push to `main` when you want GitHub Pages to publish the change.
+
 ## Build and deploy
 
 Install the locked Ruby and Node dependencies with `bundle install` and `npm ci`, then run `bundle exec jekyll build`. The starter's `.github/workflows/deploy.yml` builds and publishes `_site` to `gh-pages` when `main` changes. GitHub Pages serves that branch at the repository's root URL.
