@@ -1,11 +1,10 @@
 /* Personal presentation layer. Core al-folio components remain gem-owned. */
 :root,
-html[data-theme="dark"] {
-  --bg-primary: #070a10;
-  --bg-secondary: #0c1018;
-  --surface: #10151d;
-  --cobalt: #1717b8;
-  --cobalt-deep: #101096;
+html[data-theme="dark"],
+html[data-theme="light"] {
+  --bg-primary: #090909;
+  --bg-secondary: #101010;
+  --surface: #151515;
   --cyan: #70f1ff;
   --cyan-bright: #b8fbff;
   --cyan-muted: #58b8c9;
@@ -29,20 +28,14 @@ html[data-theme="dark"] {
   --site-display: "Chakra Petch", "Share Tech Mono", sans-serif;
 }
 
-html[data-theme="light"] {
-  --bg-primary: #f6f5f0;
-  --bg-secondary: #eeefec;
-  --surface: #e8ebe9;
-  --cobalt: #2626b5;
-  --cobalt-deep: #161683;
-  --cyan: #0b778d;
-  --cyan-bright: #00556a;
-  --cyan-muted: #438a99;
-  --text-primary: #075f74;
-  --text-secondary: #397b89;
-  --text-muted: #5a8992;
-  --line: rgba(13, 83, 108, 0.2);
-  --line-strong: rgba(13, 83, 108, 0.44);
+/* Shared, static texture: adjust the size to change the apparent star density. */
+body,
+.site-nav,
+.site-footer {
+  background-color: var(--bg-primary);
+  background-image: url("../img/starfield-texture.webp");
+  background-repeat: repeat;
+  background-size: 1536px 1024px;
 }
 
 html {
@@ -99,7 +92,7 @@ h4 {
 .site-nav {
   min-height: 76px;
   padding-block: 0 !important;
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
   border-bottom: 1px solid var(--line);
 }
 
@@ -214,7 +207,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   isolation: isolate;
   overflow: hidden;
   min-height: calc(100svh - 76px);
-  background: var(--cobalt);
+  background: transparent;
   color: #a5f7ff;
 }
 
@@ -231,29 +224,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   padding: var(--hero-copy-top) var(--hero-copy-left) 70px;
 }
 
-.hero-geometry {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.hero-coordinates {
-  position: absolute;
-  z-index: 1;
-  right: clamp(38px, 6vw, 90px);
-  bottom: 50px;
-  color: rgba(231, 249, 255, 0.36);
-  font-family: var(--site-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  line-height: 1.8;
-  text-align: right;
-}
-
-/* The identity lives directly in the cobalt field. */
+/* The identity sits directly on the shared starfield texture. */
 .hero-copy {
   position: relative;
   z-index: 2;
@@ -372,7 +343,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(130, 243, 255, 0.3);
-  background: var(--cobalt);
+  background: transparent;
 }
 
 .portrait-window__image img {
@@ -1092,7 +1063,7 @@ body {
 .site-footer {
   margin-top: 75px;
   border-top: 1px solid var(--line);
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
 }
 
 .site-footer__inner {
@@ -1130,7 +1101,7 @@ body {
   }
 }
 
-/* The reading area uses a quieter scale after the cobalt opening. */
+/* The reading area uses a quieter scale after the opening. */
 .section-heading h2 {
   font-size: clamp(28px, 3vw, 38px);
   letter-spacing: -0.035em;
@@ -1237,12 +1208,6 @@ body {
   }
   .portrait-placeholder {
     min-height: 250px;
-  }
-  .hero-coordinates {
-    right: auto;
-    bottom: 29px;
-    left: 25px;
-    text-align: left;
   }
   .site-home > .home-section {
     padding-inline: 23px;
