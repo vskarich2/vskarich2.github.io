@@ -13,7 +13,7 @@ footer_text:
 keywords: Veljko Skarich, AI agents, agent reliability, interpretability, machine learning research
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg
-headshot_ready: false # switch on only after an approved public portrait replaces the placeholder JPEG
+headshot_ready: true # approved portrait supplied by the owner
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://vskarich2.github.io

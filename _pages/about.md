@@ -6,7 +6,7 @@ description: Veljko Skarich — AI agents, reasoning, and reliable intelligent s
 nav: false
 ---
 
-{% assign portrait = site.static_files | where: 'path', '/assets/img/headshot.jpg' | first %}
+{% assign portrait = site.static_files | where: 'path', '/assets/img/headshot.png' | first %}
 
 <main class="site-home">
   <section class="home-hero" aria-labelledby="home-title">
@@ -53,7 +53,7 @@ nav: false
         <div class="portrait-window__bar">PROFILE_01</div>
         <div class="portrait-window__image">
           {% if portrait and site.headshot_ready %}
-            <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Portrait of Veljko Skarich" width="340" loading="eager">
+            <img src="{{ '/assets/img/headshot.png' | relative_url }}" alt="Portrait of Veljko Skarich" width="288" height="386" loading="eager">
           {% else %}
             <div class="portrait-placeholder" role="img" aria-label="Portrait to be added">
               <span class="portrait-placeholder__mark" aria-hidden="true">VS</span>
