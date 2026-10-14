@@ -57,25 +57,12 @@ nav: false
               </svg>
               <span class="symbol-link__label">GITHUB <span aria-hidden="true">↗</span></span>
             </a>
-            <a class="symbol-link symbol-link--hourglass" href="{{ '/publications/' | relative_url }}" >
-              <svg class="symbol-link__art" viewBox="1200 165 410 290" aria-hidden="true" focusable="false">
-                <defs>
-                  <filter id="hourglass-contrast" color-interpolation-filters="sRGB">
-                    <feComponentTransfer>
-                      <feFuncR type="linear" slope="1.55" intercept="-0.25"></feFuncR>
-                      <feFuncG type="linear" slope="1.55" intercept="-0.25"></feFuncG>
-                      <feFuncB type="linear" slope="1.55" intercept="-0.25"></feFuncB>
-                    </feComponentTransfer>
-                  </filter>
-                  <mask id="hourglass-mask" maskUnits="userSpaceOnUse" x="1200" y="165" width="410" height="290" style="mask-type: luminance">
-                    <image href="{{ '/assets/img/symbols/retro-symbol-sheet.jpg' | relative_url }}" x="0" y="0" width="1800" height="1200" filter="url(#hourglass-contrast)"></image>
-                  </mask>
-                </defs>
-                <rect x="1200" y="165" width="410" height="290" fill="#fff" mask="url(#hourglass-mask)"></rect>
-              </svg>
-              <span class="symbol-link__label">PUBLICATIONS <span aria-hidden="true">↗</span></span>
-            </a>
-            <a class="symbol-link symbol-link--star" href="{{ '/cv/' | relative_url }}" >
+            <a
+              class="symbol-link symbol-link--star"
+              href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"
+              target="_blank"
+              rel="me noopener noreferrer"
+            >
               <svg class="symbol-link__art" viewBox="225 175 275 100" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="star-contrast" color-interpolation-filters="sRGB">
@@ -91,7 +78,7 @@ nav: false
                 </defs>
                 <rect x="225" y="175" width="275" height="100" fill="#fff" mask="url(#star-mask)"></rect>
               </svg>
-              <span class="symbol-link__label">CV <span aria-hidden="true">↗</span></span>
+              <span class="symbol-link__label">LINKEDIN <span aria-hidden="true">↗</span></span>
             </a>
           </nav>
         </div>
@@ -121,7 +108,7 @@ nav: false
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> IAB @ NeurIPS</div>
       <div class="research-entry__body">
         <h3>Poisoned Valleys</h3>
-        <p>Accepted at the First Workshop on Interpreting Agent Behavior, NeurIPS 2026.</p>
+        <p>Interpreting Agent Behavior, NeurIPS 2026.</p>
         <p class="research-entry__authors">Veljko Skarich</p>
         <div class="research-entry__links"><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">PoisonValleys.org <span aria-hidden="true">↗</span></a></div>
       </div>
@@ -130,7 +117,7 @@ nav: false
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> Who Verifies the Agents? @ NeurIPS</div>
       <div class="research-entry__body">
         <h3>Multi-Agent Debate for Explainable Trading: Reasoning, Consensus, and Performance in Simulated Markets</h3>
-        <p>Accepted at Who Verifies the Agents?, NeurIPS 2026.</p>
+        <p>Who Verifies the Agents? NeurIPS 2026.</p>
         <p class="research-entry__authors">Juli Huang, Alanood Alrassan, Deveen Harischandra, Theodore Wu, Veljko Skarich, Matthew Hayes</p>
         <div class="research-entry__links"><a href="https://arxiv.org/abs/2609.29701" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
       </div>

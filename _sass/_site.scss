@@ -1194,7 +1194,7 @@ body {
 /* Small, labeled symbols drawn from the visual language of the reference. */
 .hero-copy__links.symbol-links {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px 16px;
   margin-top: 38px;
 }
@@ -1222,10 +1222,6 @@ body {
 
 .symbol-link--coil .symbol-link__art {
   width: 65px;
-}
-
-.symbol-link--hourglass .symbol-link__art {
-  width: 56px;
 }
 
 .symbol-link--star .symbol-link__art {
