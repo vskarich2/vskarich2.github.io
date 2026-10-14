@@ -101,7 +101,7 @@ nav: false
         <div class="portrait-window__bar">PROFILE_01</div>
         <div class="portrait-window__image">
           {% if portrait and site.headshot_ready %}
-            <img src="{{ '/assets/img/headshot.png' | relative_url }}" alt="Portrait of Veljko Skarich" width="288" height="386" loading="eager">
+            <img src="{{ '/assets/img/headshot.png' | relative_url }}?v=near-black-20261014" alt="Portrait of Veljko Skarich" width="720" height="960" loading="eager">
           {% else %}
             <div class="portrait-placeholder" role="img" aria-label="Portrait to be added">
               <span class="portrait-placeholder__mark" aria-hidden="true">VS</span>
