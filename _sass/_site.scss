@@ -243,8 +243,18 @@ body.site-home-page > .container[role="main"].mt-5 {
   line-height: 1.15;
 }
 
+.hero-copy__conference {
+  margin: 12px 0 0;
+  color: var(--accent-muted);
+  font-family: var(--site-display);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+}
+
 .hero-copy__descriptor {
-  margin: 21px 0 0;
+  margin: 9px 0 0;
   color: #ffffff;
   font-family: var(--site-display);
   font-size: clamp(14px, 1.2vw, 17px);

@@ -14,6 +14,7 @@ nav: false
       <div class="hero-copy">
         <div class="hero-copy__content">
           <h1 id="home-title">VELJKO SKARICH</h1>
+          <p class="hero-copy__conference">NEURIPS 2026</p>
           <p class="hero-copy__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
           <p class="hero-copy__bio">
             I’m a researcher with a background in software engineering. I study how language model agents reason, where their reasoning fails, and how to
