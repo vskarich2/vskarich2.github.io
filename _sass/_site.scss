@@ -293,38 +293,14 @@ body.site-home-page > .container[role="main"].mt-5 {
   top: 18%;
   right: clamp(36px, 4vw, 70px);
   width: min(298px, 22vw);
-  padding: 10px;
-  border: 1px solid rgba(241, 238, 231, 0.75);
+  padding: 8px;
+  border: 1px solid rgba(241, 238, 231, 0.42);
   background: transparent;
-}
-
-.portrait-window::before,
-.portrait-window::after {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  content: "";
-  pointer-events: none;
-}
-
-.portrait-window::before {
-  top: -2px;
-  left: -2px;
-  border-top: 2px solid var(--text-primary);
-  border-left: 2px solid var(--text-primary);
-}
-
-.portrait-window::after {
-  right: -2px;
-  bottom: -2px;
-  border-right: 2px solid var(--text-primary);
-  border-bottom: 2px solid var(--text-primary);
 }
 
 .portrait-window__image {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(241, 238, 231, 0.3);
   background: transparent;
 }
 
@@ -1237,7 +1213,7 @@ body {
 
 .symbol-link__art {
   display: block;
-  width: 135px;
+  width: 68px;
   max-width: 100%;
   height: auto;
   overflow: hidden;
@@ -1245,15 +1221,15 @@ body {
 }
 
 .symbol-link--coil .symbol-link__art {
-  width: 130px;
+  width: 65px;
 }
 
 .symbol-link--hourglass .symbol-link__art {
-  width: 112px;
+  width: 56px;
 }
 
 .symbol-link--star .symbol-link__art {
-  width: 105px;
+  width: 53px;
 }
 
 .symbol-link__label {
