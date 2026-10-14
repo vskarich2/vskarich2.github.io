@@ -43,10 +43,11 @@ nav: false
     <div class="section-heading">
       <div><h2 id="selected-publications-title">Selected Publications</h2></div>
     </div>
-    <article class="research-entry">
+    <article class="research-entry research-entry--poisoned-valleys">
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> IAB @ NeurIPS</div>
       <div class="research-entry__body">
-        <h3>Poisoned Valleys</h3>
+        <!-- Replace this temporary project URL with the paper archive URL when it is available. -->
+        <h3><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">Poisoned Valleys</a></h3>
         <p>Interpreting Agent Behavior, NeurIPS 2026.</p>
         <p class="research-entry__authors">Veljko Skarich</p>
         <div class="research-entry__links"><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">PoisonValleys.org <span aria-hidden="true">↗</span></a></div>
@@ -55,10 +56,13 @@ nav: false
     <article class="research-entry">
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> Who Verifies the Agents? @ NeurIPS</div>
       <div class="research-entry__body">
-        <h3>Multi-Agent Debate for Explainable Trading: Reasoning, Consensus, and Performance in Simulated Markets</h3>
+        <h3>
+          <a href="https://arxiv.org/abs/2609.29701" target="_blank" rel="noopener noreferrer"
+            >Multi-Agent Debate for Explainable Trading: Reasoning, Consensus, and Performance in Simulated Markets</a
+          >
+        </h3>
         <p>Who Verifies the Agents? NeurIPS 2026.</p>
         <p class="research-entry__authors">Juli Huang, Alanood Alrassan, Deveen Harischandra, Theodore Wu, Veljko Skarich, Matthew Hayes</p>
-        <div class="research-entry__links"><a href="https://arxiv.org/abs/2609.29701" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
   </section>

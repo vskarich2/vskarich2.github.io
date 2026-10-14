@@ -392,6 +392,10 @@ body.site-home-page > .container[role="main"].mt-5 {
   border-top: 1px solid var(--global-divider-color);
 }
 
+.research-entry--poisoned-valleys {
+  padding-bottom: 24px;
+}
+
 .research-entry__meta {
   padding-top: 9px;
   color: var(--global-theme-color);
@@ -410,6 +414,16 @@ body.site-home-page > .container[role="main"].mt-5 {
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1.2;
+}
+
+.research-entry__body h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-entry__body h3 a:hover,
+.research-entry__body h3 a:focus-visible {
+  color: var(--global-theme-color);
 }
 
 .research-entry__body p {
