@@ -290,7 +290,7 @@ body.site-home-page > .container[role="main"].mt-5 {
 .portrait-window {
   position: absolute;
   z-index: 3;
-  top: 18%;
+  top: var(--hero-copy-top);
   right: clamp(36px, 4vw, 70px);
   width: min(298px, 22vw);
   padding: 8px;

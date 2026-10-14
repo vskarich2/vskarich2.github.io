@@ -18,7 +18,7 @@ nav: false
           <p class="hero-copy__bio">
             I’m a researcher with a background in software engineering. I study how language model agents reason, where their reasoning fails, and how to
             inspect and verify their behavior. In Poisoned Valleys, I investigate how misconceptions during code repair shape an agent’s hypotheses,
-            plans, and resulting patches. I have two papers accepted at NeurIPS 2026 workshops.
+            plans, and resulting patches.
           </p>
           <nav class="hero-copy__links symbol-links" aria-label="Research profile links">
             <a class="symbol-link symbol-link--orbit" href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">
