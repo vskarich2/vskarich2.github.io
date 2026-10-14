@@ -98,7 +98,6 @@ nav: false
       </div>
 
       <div class="portrait-window">
-        <div class="portrait-window__bar">PROFILE_01</div>
         <div class="portrait-window__image">
           {% if portrait and site.headshot_ready %}
             <img src="{{ '/assets/img/headshot.png' | relative_url }}?v=near-black-20261014" alt="Portrait of Veljko Skarich" width="720" height="960" loading="eager">
@@ -109,7 +108,6 @@ nav: false
             </div>
           {% endif %}
         </div>
-        <div class="portrait-window__foot">V. SKARICH / 01A</div>
       </div>
     </div>
 
