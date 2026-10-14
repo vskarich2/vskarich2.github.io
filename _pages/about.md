@@ -20,11 +20,23 @@ nav: false
             inspect and verify their behavior. In Poisoned Valleys, I investigate how misconceptions during code repair shape an agent’s hypotheses,
             plans, and resulting patches. I have two papers accepted at NeurIPS 2026 workshops.
           </p>
-          <nav class="hero-copy__links" aria-label="Research profile links">
-            <a href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">POISONVALLEYS.ORG <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">GITHUB <span aria-hidden="true">↗</span></a>
-            <a href="{{ '/publications/' | relative_url }}">PUBLICATIONS <span aria-hidden="true">↗</span></a>
-            <a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+          <nav class="hero-copy__links symbol-links" aria-label="Research profile links">
+            <a class="symbol-link symbol-link--orbit" href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">
+              <img class="symbol-link__art" src="{{ '/assets/img/symbols/orbit.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <span class="symbol-link__label">POISONVALLEYS.ORG <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="symbol-link symbol-link--coil" href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">
+              <img class="symbol-link__art" src="{{ '/assets/img/symbols/coil.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <span class="symbol-link__label">GITHUB <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="symbol-link symbol-link--hourglass" href="{{ '/publications/' | relative_url }}" >
+              <img class="symbol-link__art" src="{{ '/assets/img/symbols/hourglass.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <span class="symbol-link__label">PUBLICATIONS <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="symbol-link symbol-link--star" href="{{ '/cv/' | relative_url }}" >
+              <img class="symbol-link__art" src="{{ '/assets/img/symbols/star.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <span class="symbol-link__label">CV <span aria-hidden="true">↗</span></span>
+            </a>
           </nav>
         </div>
       </div>

@@ -1227,3 +1227,80 @@ body {
     font-size: 10px;
   }
 }
+
+/* Small, labeled symbols drawn from the visual language of the reference. */
+.hero-copy__links.symbol-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px 16px;
+  margin-top: 38px;
+}
+
+.symbol-links .symbol-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-height: 104px;
+  padding: 4px 0;
+  font-size: 10px;
+  letter-spacing: 0.015em;
+}
+
+.symbol-link__art {
+  display: block;
+  width: 124px;
+  max-width: 100%;
+  height: 74px;
+  object-fit: contain;
+  transition: transform 180ms ease;
+}
+
+.symbol-link--coil .symbol-link__art {
+  width: 98px;
+}
+
+.symbol-link--hourglass .symbol-link__art {
+  width: 106px;
+}
+
+.symbol-link--star .symbol-link__art {
+  width: 54px;
+}
+
+.symbol-link__label {
+  display: block;
+  text-align: center;
+}
+
+.symbol-link:hover .symbol-link__art,
+.symbol-link:focus-visible .symbol-link__art {
+  transform: translateY(-3px);
+}
+
+.symbol-link:hover .symbol-link__label,
+.symbol-link:focus-visible .symbol-link__label {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .hero-copy__links.symbol-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 22px;
+  }
+  .symbol-links .symbol-link {
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .symbol-link__art {
+    transition: none;
+  }
+  .symbol-link:hover .symbol-link__art,
+  .symbol-link:focus-visible .symbol-link__art {
+    transform: none;
+  }
+}
