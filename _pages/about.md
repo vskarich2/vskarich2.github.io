@@ -113,18 +113,6 @@ nav: false
 
   </section>
 
-  <section class="home-section interests" aria-labelledby="interests-title">
-    <div class="section-heading">
-      <div><h2 id="interests-title">Selected Research</h2></div>
-      <a class="section-more" href="{{ '/research/' | relative_url }}">Research themes <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="interest-grid">
-      <article><h3>Agent Reliability</h3><p>How reasoning and context failures propagate through long-horizon autonomous systems.</p></article>
-      <article><h3>Interpretability</h3><p>Connecting an agent's intermediate reasoning decisions to downstream behavior.</p></article>
-      <article><h3>Verification</h3><p>Building systems capable of detecting when autonomous agents are incorrect rather than merely plausible.</p></article>
-    </div>
-  </section>
-
   <section class="home-section selected-research" aria-labelledby="selected-publications-title">
     <div class="section-heading">
       <div><h2 id="selected-publications-title">Selected Publications</h2></div>
@@ -141,23 +129,4 @@ nav: false
     </article>
   </section>
 
-  <section class="home-section selected-projects" aria-labelledby="selected-projects-title">
-    <div class="section-heading">
-      <div><h2 id="selected-projects-title">Selected Systems</h2></div>
-      <a class="section-more" href="{{ '/projects/' | relative_url }}">Explore projects <span aria-hidden="true">↗</span></a>
-    </div>
-    <a class="project-row" href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">
-      <span class="project-row__category">RESEARCH PROJECT</span><span class="project-row__title">Poisoned Valleys</span><span class="project-row__arrow" aria-hidden="true">↗</span>
-    </a>
-  </section>
-
-  <section class="home-section home-contact" aria-labelledby="contact-title">
-    <div class="section-heading">
-      <div><h2 id="contact-title">Stay in touch</h2></div>
-    </div>
-    <div class="home-contact__body">
-      <p>Interested in agents, verification, interpretability, and reliable AI systems.</p>
-      <div class="home-contact__links"><a href="https://github.com/vskarich2" target="_blank" rel="me noopener noreferrer">GitHub ↗</a><a href="{{ '/contact/' | relative_url }}">Contact details ↗</a></div>
-    </div>
-  </section>
 </main>
