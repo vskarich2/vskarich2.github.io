@@ -423,9 +423,9 @@ body.site-home-page > .container[role="main"].mt-5 {
   text-decoration-thickness: 2px;
   text-underline-offset: 0.16em;
   transition:
-    color 160ms ease,
-    text-decoration-color 160ms ease,
-    text-shadow 160ms ease;
+    color 60ms ease-out,
+    text-decoration-color 60ms ease-out,
+    text-shadow 60ms ease-out;
 }
 
 .research-entry__body h3 a:hover,
