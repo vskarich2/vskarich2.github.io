@@ -247,9 +247,9 @@ body.site-home-page > .container[role="main"].mt-5 {
   margin: 12px 0 0;
   color: var(--accent-muted);
   font-family: var(--site-display);
-  font-size: 12px;
+  font-size: clamp(14px, 1.1vw, 16px);
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.11em;
   line-height: 1.4;
 }
 
