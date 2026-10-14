@@ -113,6 +113,7 @@ h4 {
 }
 
 .site-nav .site-nav__menu {
+  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -122,6 +123,7 @@ h4 {
 
 .site-nav .site-nav__links {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: clamp(14px, 1.7vw, 25px);
   margin-left: auto;
@@ -179,6 +181,7 @@ h4 {
 }
 
 .site-nav__toggle {
+  display: none;
   border: 0;
   background: transparent;
 }
@@ -659,7 +662,7 @@ footer .container {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .site-nav__inner {
     flex-wrap: wrap;
   }
@@ -1250,23 +1253,23 @@ body {
 
 .symbol-link__art {
   display: block;
-  width: 124px;
+  width: 135px;
   max-width: 100%;
-  height: 74px;
-  object-fit: contain;
+  height: auto;
+  overflow: hidden;
   transition: transform 180ms ease;
 }
 
 .symbol-link--coil .symbol-link__art {
-  width: 98px;
+  width: 130px;
 }
 
 .symbol-link--hourglass .symbol-link__art {
-  width: 106px;
+  width: 112px;
 }
 
 .symbol-link--star .symbol-link__art {
-  width: 54px;
+  width: 105px;
 }
 
 .symbol-link__label {

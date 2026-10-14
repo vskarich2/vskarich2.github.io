@@ -22,19 +22,75 @@ nav: false
           </p>
           <nav class="hero-copy__links symbol-links" aria-label="Research profile links">
             <a class="symbol-link symbol-link--orbit" href="https://poisonvalleys.org" rel="noopener noreferrer" target="_blank">
-              <img class="symbol-link__art" src="{{ '/assets/img/symbols/orbit.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <svg class="symbol-link__art" viewBox="515 170 690 385" aria-hidden="true" focusable="false">
+                <defs>
+                  <filter id="orbit-contrast" color-interpolation-filters="sRGB">
+                    <feComponentTransfer>
+                      <feFuncR type="linear" slope="1.55" intercept="-0.25"></feFuncR>
+                      <feFuncG type="linear" slope="1.55" intercept="-0.25"></feFuncG>
+                      <feFuncB type="linear" slope="1.55" intercept="-0.25"></feFuncB>
+                    </feComponentTransfer>
+                  </filter>
+                  <mask id="orbit-mask" maskUnits="userSpaceOnUse" x="515" y="170" width="690" height="385" style="mask-type: luminance">
+                    <image href="{{ '/assets/img/symbols/retro-symbol-sheet.jpg' | relative_url }}" x="0" y="0" width="1800" height="1200" filter="url(#orbit-contrast)"></image>
+                  </mask>
+                </defs>
+                <rect x="515" y="170" width="690" height="385" fill="#fff" mask="url(#orbit-mask)"></rect>
+              </svg>
               <span class="symbol-link__label">POISONVALLEYS.ORG <span aria-hidden="true">↗</span></span>
             </a>
             <a class="symbol-link symbol-link--coil" href="https://github.com/vskarich2" rel="me noopener noreferrer" target="_blank">
-              <img class="symbol-link__art" src="{{ '/assets/img/symbols/coil.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <svg class="symbol-link__art" viewBox="1210 710 385 125" aria-hidden="true" focusable="false">
+                <defs>
+                  <filter id="coil-contrast" color-interpolation-filters="sRGB">
+                    <feComponentTransfer>
+                      <feFuncR type="linear" slope="1.55" intercept="-0.25"></feFuncR>
+                      <feFuncG type="linear" slope="1.55" intercept="-0.25"></feFuncG>
+                      <feFuncB type="linear" slope="1.55" intercept="-0.25"></feFuncB>
+                    </feComponentTransfer>
+                  </filter>
+                  <mask id="coil-mask" maskUnits="userSpaceOnUse" x="1210" y="710" width="385" height="125" style="mask-type: luminance">
+                    <image href="{{ '/assets/img/symbols/retro-symbol-sheet.jpg' | relative_url }}" x="0" y="0" width="1800" height="1200" filter="url(#coil-contrast)"></image>
+                  </mask>
+                </defs>
+                <rect x="1210" y="710" width="385" height="125" fill="#fff" mask="url(#coil-mask)"></rect>
+              </svg>
               <span class="symbol-link__label">GITHUB <span aria-hidden="true">↗</span></span>
             </a>
             <a class="symbol-link symbol-link--hourglass" href="{{ '/publications/' | relative_url }}" >
-              <img class="symbol-link__art" src="{{ '/assets/img/symbols/hourglass.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <svg class="symbol-link__art" viewBox="1200 165 410 290" aria-hidden="true" focusable="false">
+                <defs>
+                  <filter id="hourglass-contrast" color-interpolation-filters="sRGB">
+                    <feComponentTransfer>
+                      <feFuncR type="linear" slope="1.55" intercept="-0.25"></feFuncR>
+                      <feFuncG type="linear" slope="1.55" intercept="-0.25"></feFuncG>
+                      <feFuncB type="linear" slope="1.55" intercept="-0.25"></feFuncB>
+                    </feComponentTransfer>
+                  </filter>
+                  <mask id="hourglass-mask" maskUnits="userSpaceOnUse" x="1200" y="165" width="410" height="290" style="mask-type: luminance">
+                    <image href="{{ '/assets/img/symbols/retro-symbol-sheet.jpg' | relative_url }}" x="0" y="0" width="1800" height="1200" filter="url(#hourglass-contrast)"></image>
+                  </mask>
+                </defs>
+                <rect x="1200" y="165" width="410" height="290" fill="#fff" mask="url(#hourglass-mask)"></rect>
+              </svg>
               <span class="symbol-link__label">PUBLICATIONS <span aria-hidden="true">↗</span></span>
             </a>
             <a class="symbol-link symbol-link--star" href="{{ '/cv/' | relative_url }}" >
-              <img class="symbol-link__art" src="{{ '/assets/img/symbols/star.svg' | relative_url }}" alt="" aria-hidden="true" width="180" height="100">
+              <svg class="symbol-link__art" viewBox="225 175 275 100" aria-hidden="true" focusable="false">
+                <defs>
+                  <filter id="star-contrast" color-interpolation-filters="sRGB">
+                    <feComponentTransfer>
+                      <feFuncR type="linear" slope="1.55" intercept="-0.25"></feFuncR>
+                      <feFuncG type="linear" slope="1.55" intercept="-0.25"></feFuncG>
+                      <feFuncB type="linear" slope="1.55" intercept="-0.25"></feFuncB>
+                    </feComponentTransfer>
+                  </filter>
+                  <mask id="star-mask" maskUnits="userSpaceOnUse" x="225" y="175" width="275" height="100" style="mask-type: luminance">
+                    <image href="{{ '/assets/img/symbols/retro-symbol-sheet.jpg' | relative_url }}" x="0" y="0" width="1800" height="1200" filter="url(#star-contrast)"></image>
+                  </mask>
+                </defs>
+                <rect x="225" y="175" width="275" height="100" fill="#fff" mask="url(#star-mask)"></rect>
+              </svg>
               <span class="symbol-link__label">CV <span aria-hidden="true">↗</span></span>
             </a>
           </nav>
