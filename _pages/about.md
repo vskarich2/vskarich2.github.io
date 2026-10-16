@@ -50,8 +50,7 @@ nav: false
     <article class="research-entry research-entry--poisoned-valleys">
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> IAB @ NeurIPS</div>
       <div class="research-entry__body">
-        <!-- Replace this temporary project URL with the paper archive URL when it is available. -->
-        <h3><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">Poisoned Valleys</a></h3>
+        <h3><a href="https://arxiv.org/abs/2610.21514" target="_blank" rel="noopener noreferrer">Poisoned Valleys</a></h3>
         <p>Interpreting Agent Behavior, NeurIPS 2026.</p>
         <p class="research-entry__authors">Veljko Skarich</p>
         <div class="research-entry__links"><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">PoisonValleys.org <span aria-hidden="true">↗</span></a></div>
