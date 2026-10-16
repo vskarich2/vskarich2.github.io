@@ -210,7 +210,7 @@ body.site-home-page > .container[role="main"].mt-5 {
 
 .home-hero__field {
   /* Change these two values to move the entire name, descriptor, bio, and links. */
-  --hero-copy-top: 76px;
+  --hero-copy-top: 32px;
   --hero-copy-left: 60px;
   position: relative;
   display: flex;
@@ -273,6 +273,19 @@ body.site-home-page > .container[role="main"].mt-5 {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.65;
+}
+
+.hero-copy__publication-link {
+  color: inherit;
+  text-decoration-color: rgba(255, 255, 255, 0.58);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.hero-copy__publication-link:hover,
+.hero-copy__publication-link:focus-visible {
+  color: var(--accent-bright);
+  text-decoration-color: currentColor;
 }
 
 .hero-copy__links {
@@ -404,6 +417,7 @@ body.site-home-page > .container[role="main"].mt-5 {
   gap: 35px;
   padding: 29px 0 7px;
   border-top: 1px solid var(--global-divider-color);
+  scroll-margin-top: 96px;
 }
 
 .research-entry--poisoned-valleys {
@@ -1131,7 +1145,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    --hero-copy-top: 64px;
+    --hero-copy-top: 36px;
     --hero-copy-left: 36px;
     min-height: calc(100svh - 76px);
     padding: var(--hero-copy-top) var(--hero-copy-left) 64px;
@@ -1166,7 +1180,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    --hero-copy-top: 54px;
+    --hero-copy-top: 30px;
     --hero-copy-left: 23px;
     min-height: calc(100svh - 76px);
     padding: var(--hero-copy-top) var(--hero-copy-left) 66px;

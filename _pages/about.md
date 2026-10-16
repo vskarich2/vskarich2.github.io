@@ -21,8 +21,11 @@ nav: false
           <p class="hero-copy__descriptor">AI AGENTS / INTERPRETABILITY / VERIFICATION</p>
           <p class="hero-copy__bio">
             I’m a researcher with a background in software engineering. I study how language model agents reason, where their reasoning fails, and how to
-            inspect and verify their behavior. In Poisoned Valleys, I investigate how misconceptions during code repair shape an agent’s hypotheses,
-            plans, and resulting patches.
+            inspect and verify their behavior. In <a class="hero-copy__publication-link" href="#poisoned-valleys">Poisoned Valleys</a>, I investigate how
+            misconceptions during code repair shape an agent’s hypotheses, plans, and resulting patches. In
+            <a class="hero-copy__publication-link" href="#multi-agent-debate">Multi-Agent Debate for Explainable Trading</a>, I study how agents in
+            simulated stock markets explain decisions, reach consensus, and translate collective reasoning into trading performance. Across both
+            projects, I’m interested in making agent behavior more legible and its failures easier to diagnose.
           </p>
         </div>
       </div>
@@ -47,7 +50,7 @@ nav: false
     <div class="section-heading">
       <div><h2 id="selected-publications-title">Selected Publications</h2></div>
     </div>
-    <article class="research-entry research-entry--poisoned-valleys">
+    <article id="poisoned-valleys" class="research-entry research-entry--poisoned-valleys">
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> IAB @ NeurIPS</div>
       <div class="research-entry__body">
         <h3><a href="https://arxiv.org/abs/2610.21514" target="_blank" rel="noopener noreferrer">Poisoned Valleys</a></h3>
@@ -56,7 +59,7 @@ nav: false
         <div class="research-entry__links"><a href="https://poisonvalleys.org" target="_blank" rel="noopener noreferrer">PoisonValleys.org <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
-    <article class="research-entry">
+    <article id="multi-agent-debate" class="research-entry">
       <div class="research-entry__meta">2026 <span aria-hidden="true">/</span> Who Verifies the Agents? @ NeurIPS</div>
       <div class="research-entry__body">
         <h3>
